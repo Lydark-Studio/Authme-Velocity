@@ -8,18 +8,18 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class AuthMeVelocityPlugin extends JavaPlugin {
     @Override
-    public void onEnable() {
-        getServer().getMessenger().registerOutgoingPluginChannel(this, "authmevelocity:main");
-        getServer().getPluginManager().registerEvents(new AuthMeListener(this), this);
-
-        getLogger().info("AuthMeVelocity enabled.");
+    public void onEnable( ){
+        getServer( ).getMessenger( ).registerOutgoingPluginChannel( this , "authmevelocity:main" );
+        getServer( ).getPluginManager( ).registerEvents( new AuthMeListener( this ) , this );
+        
+        getLogger( ).info( "AuthMeVelocity enabled." );
     }
-
-    public void sendLoginToProxy(Player player) {
-        ByteArrayDataOutput out = ByteStreams.newDataOutput();
-        out.writeUTF("LOGIN");
-        out.writeUTF(player.getUniqueId().toString());
-
-        player.sendPluginMessage(this, "authmevelocity:main", out.toByteArray());
+    
+    public void sendLoginToProxy( Player player ){
+        ByteArrayDataOutput out = ByteStreams.newDataOutput( );
+        out.writeUTF( "LOGIN" );
+        out.writeUTF( player.getUniqueId( ).toString( ) );
+        
+        player.sendPluginMessage( this , "authmevelocity:main" , out.toByteArray( ) );
     }
 }

@@ -1,28 +1,27 @@
 package com.glyart.authmevelocity.proxy.config;
 
-import java.util.List;
-
 import com.glyart.authmevelocity.proxy.AuthMeVelocityPlugin;
-
 import de.leonhard.storage.Yaml;
 
+import java.util.List;
+
 public interface AuthMeConfig {
-    public static void defaultConfig(){
-        Yaml config = AuthMeVelocityPlugin.getConfig();
+    static void defaultConfig( ){
+        Yaml config = AuthMeVelocityPlugin.getConfig( );
         config.setDefault(
-            "authservers",
-            List.of(
-                "auth1",
-                "auth2"
-            ));
+                "authservers" ,
+                List.of(
+                        "auth1" ,
+                        "auth2"
+                ) );
         config.setDefault(
-            "teleport.send-to-server-after-login",
-            false);
+                "teleport.send-to-server-after-login" ,
+                false );
         config.setDefault(
-            "teleport.servers",
-            List.of(
-                "lobby1",
-                "lobby2"
-            ));
+                "teleport.servers" ,
+                List.of(
+                        "lobby1" ,
+                        "lobby2"
+                ) );
     }
 }

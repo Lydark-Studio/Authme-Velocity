@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>parent</artifactId>
@@ -10,8 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <maven.compiler.source>16</maven.compiler.source>
-        <maven.compiler.target>16</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
     <artifactId>proxy</artifactId>
@@ -45,10 +45,9 @@
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.github.games647</groupId>
-            <artifactId>fastlogin.velocity</artifactId>
-            <version>1.11-SNAPSHOT</version>
-            <scope>provided</scope>
+            <groupId>com.github.Lydark-Studio</groupId>
+            <artifactId>Velocity-Fast-Login</artifactId>
+            <version>1.11</version>
         </dependency>
     </dependencies>
 
