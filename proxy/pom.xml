@@ -47,7 +47,7 @@
         <dependency>
             <groupId>com.github.Lydark-Studio</groupId>
             <artifactId>Velocity-Fast-Login</artifactId>
-            <version>1.11</version>
+            <version>1.11-V</version>
         </dependency>
     </dependencies>
 
